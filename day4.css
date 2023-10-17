@@ -1,0 +1,103 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+  background: #E56262;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+div {
+    border: black solid 1px;
+}
+
+.premier-rond {
+    background-color: white;
+    translate: 0px 0px;
+    transform-origin: bottom right;
+    /* translate: 5px 70px; */
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border : white solid 0.1px;
+    box-shadow: 12px 12px 30px rgb(68, 49, 49) ;
+    animation:  premier_rond 4s linear infinite;
+    /* width: 250px; 
+    height: 250px;
+    border-radius: 100%; pour courber les bords
+    clip-path: circle(50% at 50% 50%); pour dessiner même couper tout ce qui n'entre pas dans la forme */
+}
+
+.deuxieme-rond {
+    background-color: white;
+    translate : 20px -30px;
+    visibility: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: white solid 0.1px ;
+    box-shadow: 12px 12px 20px rgb(159, 136, 136) ;
+    /* #C7C7C7 */
+}
+
+.troisieme-rond {
+    background-color: white;
+    translate: 40px -90px ;
+    visibility: hidden;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: white solid 0.1px;
+    box-shadow: 12px 12px 20px rgb(159, 136, 136) ;
+}
+
+/* les différentes animations*/
+
+@keyframes premier_rond {
+0%{
+    height: 0px;
+    width: 0px;
+
+}
+40%{
+    height: 120px;
+    width: 120px;
+
+}
+50%{
+    height: 120px;
+    width: 120px;
+
+}
+60%{
+    height: 120px;
+    width: 120px;
+
+}
+100%{
+    height: 0px;
+    width: 0px;
+
+}
+}
