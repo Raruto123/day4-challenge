@@ -28,9 +28,9 @@
   transform: translate(-50%,-50%);
 }
 
-div {
+/* div {
     border: black solid 1px;
-}
+} */
 
 .premier-rond {
     background-color: white;
@@ -41,7 +41,7 @@ div {
     border-radius: 100%;
     border : white solid 0.1px;
     box-shadow: 12px 12px 30px rgb(68, 49, 49) ;
-    animation:  premier_rond 4s ease-out infinite;
+    animation:  premier_rond 4s ease-in-out infinite;
     /* width: 250px; 
     height: 250px;
     border-radius: 100%; pour courber les bords
@@ -57,7 +57,7 @@ div {
     border-radius: 100%;
     border: white solid 0.1px ;
     box-shadow: 12px 12px 20px rgb(159, 136, 136) ;
-    animation: deuxieme_rond 4s ease-out 0s infinite;
+    animation: deuxieme_rond 4s ease-in-out 0s infinite;
     /* #C7C7C7 */
 }
 
@@ -70,7 +70,7 @@ div {
     border-radius: 100%;
     border: white solid 0.1px;
     box-shadow: 12px 12px 20px rgb(159, 136, 136) ;
-    animation:  troisieme_rond 4s linear 0s infinite;
+    animation:  troisieme_rond 4s ease-in-out 0s infinite;
 }
 
 /* les différentes animations*/
@@ -88,31 +88,8 @@ div {
 60%{
     transform: scale(1, 1);
 }
-71%{
-    transform: scale(0.9, 0.9);
-}
-72%{
-    transform: scale(0.8, 0.8);
-}
-73%{
-    transform: scale(0.7, 0.7);
-}
-74%{  transform: scale(0.6, 0.6);
-}
-75%{
-    transform: scale(0.5, 0.5);
-}
-76%{
-    transform: scale(0.4, 0.4);
-}
-77%{
-    transform: scale(0.3, 0.3);
-}
-78%{
-    transform: scale(0.2, 0.2);
-}
-79%{
-    transform: scale(0.1, 0.1);
+70%{
+    transform: scale(1, 1);
 }
 100%{
     transform: scale(0, 0);
@@ -127,11 +104,14 @@ div {
     20%{
         transform: scale(0, 0);
     }
-    40%{
-        transform: scale(1, 1);
-    }
     50%{
         transform: scale(1, 1);
+    }
+    60%{
+        transform: scale(1, 1);
+    }
+    80%{
+        transform: scale(0, 0);
     }
     100%{
         transform: scale(0, 0);
@@ -145,11 +125,11 @@ div {
     30% {
         transform: scale(0, 0);
     }
-    40%{
-        transform: scale(1, 1);
-    }
     50%{
         transform: scale(1, 1);
+    }
+    70%{
+        transform: scale(0, 0);
     }
     100% {
         transform: scale(0, 0);
